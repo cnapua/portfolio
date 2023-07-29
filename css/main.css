@@ -174,7 +174,7 @@ nav ul li {
   border: 0;
   background-color: transparent;
   cursor: pointer;
-  display: none;
+  display: auto;
 }
 
 /* HEADER SECTION */
@@ -335,6 +335,18 @@ nav ul li {
   color: yellow;
 }
 
+.scroll-up {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+.up-arrow {
+  width: 3rem;
+  height: 3rem;
+}
+
 
 
 /* ==========================================================================
@@ -425,7 +437,92 @@ nav ul li {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+   @media screen and (max-width: 720px) {
+    /*changes reflects on screen with a width of 720px and below*/
+    nav {
+      padding: 1.5rem 1rem;
+    }
+
+    nav ul {
+      position: fixed;
+      background-color: var(--bg-color);
+      flex-direction: column;
+      top: 86px;
+      left: 10%;
+      width: 80%;
+      text-align: center;
+      transform: translateX(120%);
+      transition: transform 0.5s ease-in;
+    }
+  
+     nav ul li {
+      margin: 8px;
+    }
+
+    .burger-menu {
+      display: block;
+    }
+  
+    nav ul.show {
+      transform: translateX(0);
+    }
+  
+    /* PROJECTS */
+    .projects-container {
+      flex-direction: column;
+    }
+  
+    .project-container {
+      width: 20.875rem;
+    }
+
+    /* ABOUT */
+    .about {
+      margin-top: -4rem;
+      flex-direction: column;
+      gap: 0;
+    }
+  
+    .bio img {
+          height: 37.5rem;
+          width: 30rem;
+      }
+  
+    .bio {
+      margin-top: -7rem;
+      width: 20.5rem;
+    }
+
+    /* FOOTER */
+    .contact-form-container {
+      max-width: 23.75rem;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .hero img {
+      height: 37.5rem;
+      width: 23rem;
+    }
+  
+    .bio {
+      width: 18.3rem;
+    }
+  
+    .project-container {
+      width: 17.875rem;
+    }
+  
+    .contact-form-container {
+      max-width: 17.75rem;
+    }
+  } 
+
+
+
+
+
+   @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
 
