@@ -12,6 +12,7 @@
    ========================================================================== */
 
 html {
+  background-color: #EEEDE9;
   color: #222;
   font-size: 1em;
   line-height: 1.4;
@@ -20,12 +21,12 @@ html {
 
 /* VARIABLES */
 :root {
-  --font-family: "Roboto", sans-serf;
+  --font-family: 'Garamond', sans-serf;
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #fcfcfc;
-  --primary-color: #4756df;
+  --bg-color: #EEEDE9;
+  --primary-color: #191919;
   --secondary-color: #ff7235;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
@@ -151,6 +152,7 @@ nav h1 {
 nav a {
   color: var(--primary-color);
   transition: var(--transition);
+  text-transform: lowercase;
 }
 
 nav a:hover {
@@ -173,7 +175,10 @@ nav ul li {
 }
 
 .intro-section h1 {
-  font-size: 6.5rem;
+  font-size: 19.9rem;
+  line-height: 208px;
+  font-family: 'Garamond';
+  background-color: var(--bg-color);
 }
 
 .intro-section p {
@@ -189,13 +194,29 @@ nav ul li {
 }
 
 .project-pic {
-  width: 65%;
-  height: 60%;
+  border-radius: 33.33%;
+  width: 85%;
+  height: 80%;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */    
+   -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   -ms-filter: grayscale(100%);
+   filter: grayscale(100%);
+   filter: gray; /* IE 6-9 */
+}
+
+.project-pic:hover {
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  filter: none;
 }
 
 .projects-title {
   text-align: center;
   padding: 5%;
+  font-size: 60px;
+  font-style: italic;
 }
 
 .projects-container {
@@ -203,11 +224,14 @@ nav ul li {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin: 100px;
 }
 
 .project-title {
   text-align: center;
-  margin-bottom: 1rem;
+  margin: 1rem;
+  font-style: italic;
+  font-weight: 600;
 }
 
 .project-container {
@@ -218,6 +242,7 @@ nav ul li {
 
 .project-container p {
   padding: 0.4rem;
+  font-size: 1.2rem;
 }
 
 .project-title {
@@ -228,14 +253,42 @@ nav ul li {
   margin-bottom: var(--bottom-margin);
 }
 
+.projects-info {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.projects-info p {
+  font-size: 3.33rem;
+  line-height: 50px;
+  font-style: italic;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
 .project-card {
-  background-color: #fff;
   border-radius: 11px;
-  box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
   margin: 10px;
 }
 
+.project-button {
+  color: #EEEDE9;
+  background: #FFF;
+  font-style: bold;
+  text-transform: lowercase;
+  letter-spacing: 5px;
+  padding: 8px;
+  border-bottom: 5px solid #191919;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  font-style: italic;
+}
 
 
 /* SKILLS SECTION */
@@ -243,16 +296,26 @@ nav ul li {
   max-width: 70rem;
   margin: auto;
   text-align: center;
-  margin: 222px 0 222px 0;
 }
 
 .skills-wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 20%;
-  border: #000 dashed 3px;
-  padding: 20px;
+  border: none;
+  padding: 100px;
+}
+
+.ability-list h3 {
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 700;
+  padding-bottom: 88.88px;
+}
+
+.skills-wrapper li {
+  font-size: 3rem;
 }
 
 .skills h2 {
@@ -263,24 +326,23 @@ nav ul li {
 /* ABOUT SECTION */
 .about {
   display: flex;
-  align-items: center;
+  gap: 0;
+  align-items: flex-start;
   justify-content: center;
   gap: 2.5rem;
   max-width: 68.75rem;
-  margin: auto;
+  margin-top: 222px;
+  margin-bottom: 222px;
 }
 
 .about img {
-  width: 30%;
-  border-radius: 50%;
-  margin: 100px;
+  width: 100%;
 }
 
 .bio {
   width: 25rem;
   padding: .625rem;
   border-radius: 6px;
-  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
 .bio h1 {
@@ -292,18 +354,24 @@ nav ul li {
   padding: 0.3rem 0;
 }
 
+.bio-text1 {
+  font-size: 1.75rem;
+  text-align: right;
+}
+
+.bio-text2 {
+  font-size: 1.25rem;
+  text-align: left;
+}
+
 /* FOOTER */
 .footer {
-
-
   display: flex;
   flex-direction: row-reverse;
   gap: 16px;
-
   justify-content: center;
   align-items: flex-end;
-
-  border: 6px dashed pink;
+  border: none;
 }
 
 .social {
@@ -318,9 +386,11 @@ nav ul li {
 }
 
 .footer-1 {
-  color: red;
+  color: orangered;
   font-size: 4rem;
+  line-height: normal;
   width: 50%;
+  text-align: left;
 }
 
 .copyright {
