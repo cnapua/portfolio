@@ -133,7 +133,7 @@ textarea {
 /* NAVIGATION SECTION */
 
 nav {
-  position: sticky;
+  position: relative;
   top: 0;
   left:0;
   z-index: 1;
@@ -142,7 +142,6 @@ nav {
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
   background-color: var(--bg-color);
-  box-shadow: 0 3px 5px #222;
 }
 
 nav h1 {
@@ -168,18 +167,9 @@ nav ul li {
   font-weight: var(--bold-font);
 }
 
-.burger-menu {
-  color: var(--primary-color);
-  font-size: 2rem;
-  border: 0;
-  background-color: transparent;
-  cursor: pointer;
-  display: auto;
-}
-
 /* HEADER SECTION */
 .header {
-  margin: 20px 0 0 50px;
+  margin: 20px 0 388px 50px;
 }
 
 .intro-section h1 {
@@ -195,7 +185,7 @@ nav ul li {
 .projects {
   background: var(--bg-color);
   padding: 30px 0;
-  margin-top: 2rem;
+  margin-top: 100px 0 100px 0;
 }
 
 .project-pic {
@@ -203,14 +193,15 @@ nav ul li {
   height: 60%;
 }
 
-.projects-title h2 {
+.projects-title {
   text-align: center;
+  padding: 5%;
 }
 
 .projects-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -221,8 +212,8 @@ nav ul li {
 
 .project-container {
   text-align: center;
-  width: 21.875rem;
-  padding: 1rem;
+  width: 22rem;
+  padding: 2rem;
 }
 
 .project-container p {
@@ -252,7 +243,7 @@ nav ul li {
   max-width: 70rem;
   margin: auto;
   text-align: center;
-  margin: 88px 88px;
+  margin: 222px 0 222px 0;
 }
 
 .skills-wrapper {
@@ -280,8 +271,9 @@ nav ul li {
 }
 
 .about img {
-  height: 37.5rem;
-  width: 37.5rem;
+  width: 30%;
+  border-radius: 50%;
+  margin: 100px;
 }
 
 .bio {
@@ -436,91 +428,6 @@ nav ul li {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-   @media screen and (max-width: 720px) {
-    /*changes reflects on screen with a width of 720px and below*/
-    nav {
-      padding: 1.5rem 1rem;
-    }
-
-    nav ul {
-      position: fixed;
-      background-color: var(--bg-color);
-      flex-direction: column;
-      top: 86px;
-      left: 10%;
-      width: 80%;
-      text-align: center;
-      transform: translateX(120%);
-      transition: transform 0.5s ease-in;
-    }
-  
-     nav ul li {
-      margin: 8px;
-    }
-
-    .burger-menu {
-      display: block;
-    }
-  
-    nav ul.show {
-      transform: translateX(0);
-    }
-  
-    /* PROJECTS */
-    .projects-container {
-      flex-direction: column;
-    }
-  
-    .project-container {
-      width: 20.875rem;
-    }
-
-    /* ABOUT */
-    .about {
-      margin-top: -4rem;
-      flex-direction: column;
-      gap: 0;
-    }
-  
-    .bio img {
-          height: 37.5rem;
-          width: 30rem;
-      }
-  
-    .bio {
-      margin-top: -7rem;
-      width: 20.5rem;
-    }
-
-    /* FOOTER */
-    .contact-form-container {
-      max-width: 23.75rem;
-    }
-  }
-
-  @media screen and (max-width: 420px) {
-    .hero img {
-      height: 37.5rem;
-      width: 23rem;
-    }
-  
-    .bio {
-      width: 18.3rem;
-    }
-  
-    .project-container {
-      width: 17.875rem;
-    }
-  
-    .contact-form-container {
-      max-width: 17.75rem;
-    }
-  } 
-
-
-
-
 
    @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
