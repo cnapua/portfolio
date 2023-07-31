@@ -392,6 +392,10 @@
         margin: 15px;
       }
 
+      .projects-title {
+        margin-top: 80px;
+      }
+
       .introduction {
         font-size: 1.5rem;
         line-height: 20px;
@@ -436,7 +440,7 @@
 
       .skills-wrapper li {
         font-size: 2.5rem;
-        line-height: 40px;
+        line-height: 30px;
       }
 
       /* ABOUT SECTION */
@@ -451,16 +455,16 @@
 
       .bio-text1 {
         font-size: 1.75rem;
-        text-align: left;
-        margin-bottom: -18px;
-        margin-left: 10px;
+        line-height: 25px;
+        text-align: justify;
+        margin: 0 5px -10px 5px;
       }
       
       .bio-text2 {
         font-size: 1.25rem;
-        text-align: right;
-        margin-top: -166px;
-        margin-left: 25px;
+        text-align: justify;
+        margin-top: -100px;
+        margin-left: 20px;
         margin-right: 10px;
         line-height: 20px;
       }
@@ -484,12 +488,12 @@
       }
       
       .social-icons {
-        font-size: 5rem;
+        font-size: 4rem;
         text-align: center;
       }
       
       .footer-1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         line-height: 66.66px;
         width: 5%;
         text-align: left;
@@ -635,11 +639,13 @@
         font-size: 1.75rem;
         text-align: right;
         margin-left: 40px;
+        margin-top: 20px;
       }
       
       .bio-text2 {
         font-size: 1.25rem;
         text-align: left;
+        margin-top: -120px;
       }
 
       /* FOOTER */
@@ -766,6 +772,10 @@
       }
         
       /* SKILLS SECTION */
+      .skills {
+        margin-top: -222px;
+      }
+      
       .skills-wrapper {
         display: flex;
         align-items: flex-start;
@@ -775,7 +785,7 @@
         border: none;
         padding: 100px;
         text-align: center;
-        margin-bottom: 200px;
+        margin-bottom: 10px;
       }
     
       .ability-list h3 {
@@ -783,6 +793,7 @@
         font-style: italic;
         font-weight: 700;
         padding-bottom: 88.88px;
+        margin-top: -100px;
       }
     
       .skills-wrapper li {
