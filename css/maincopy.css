@@ -131,20 +131,8 @@
      Author's custom styles
      ========================================================================== */
     
-  /* GENERAL STYLES */
-  .header,
-  .projects,
-  .about,
-  .footer {
-    max-width: 640px;
-    margin: 100px 0;
-  }
-
-  body {
-    background-color: tomato;
-  }
-
-  /* NAV + HEADER SECTIONS */
+  /* NAVIGATION SECTION */
+  
   nav {
     position: relative;
     top: 0;
@@ -180,12 +168,91 @@
   nav ul li {
     font-weight: var(--bold-font);
   }
-
+  
+  /* HEADER SECTION */
   .header {
     margin: 20px 0 388px 50px;
   }
-
-  /* PROJECTS SECTION */
+  
+  .intro-section h1 {
+    font-size: 19.9rem;
+    line-height: 208px;
+    font-family: 'Garamond';
+    background-color: var(--bg-color);
+  }
+  
+  .intro-section p {
+    margin: -50px 0 0 250px;
+    font-size: 3.5rem;
+  }
+  
+  /* PROJECT SECTION */
+  .projects {
+    background: var(--bg-color);
+    padding: 30px 0;
+    margin-top: 100px 0 100px 0;
+  }
+  
+  .project-pic {
+    border-radius: 33.33%;
+    width: 85%;
+    height: 80%;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */    
+     -webkit-filter: grayscale(100%);
+     -moz-filter: grayscale(100%);
+     -ms-filter: grayscale(100%);
+     filter: grayscale(100%);
+     filter: gray; /* IE 6-9 */
+  }
+  
+  .project-pic:hover {
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    filter: none;
+  }
+  
+  .projects-title {
+    text-align: center;
+    padding: 5%;
+    font-size: 60px;
+    font-style: italic;
+  }
+  
+  .projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 100px;
+  }
+  
+  .project-title {
+    text-align: center;
+    margin: 1rem;
+    font-style: italic;
+    font-weight: 600;
+  }
+  
+  .project-container {
+    text-align: center;
+    width: 22rem;
+    padding: 2rem;
+  }
+  
+  .project-container p {
+    padding: 0.4rem;
+    font-size: 1.2rem;
+  }
+  
+  .project-title {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .project-details {
+    margin-bottom: var(--bottom-margin);
+  }
+  
   .projects-info {
     display: flex;
     align-items: center;
@@ -193,27 +260,20 @@
     flex-wrap: nowrap;
     width: 100%;
   }
-
-  .projects-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 100px;
-    width: 85%;
+  
+  .projects-info p {
+    font-size: 3.33rem;
+    line-height: 50px;
+    font-style: italic;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   
-  .project-pic {
-    width: 80%;
-  }
-
-  .projects-title {
-    text-align: center;
-    padding: 20px;
-  }
-
-  .project-pic {
+  
+  .project-card {
     border-radius: 11px;
+    padding: 20px;
+    margin: 10px;
   }
   
   .project-button {
@@ -229,20 +289,122 @@
     border-left: 0;
     font-style: italic;
   }
-
+  
+  
   /* SKILLS SECTION */
-  .introduction {
+  .skills {
+    max-width: 70rem;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .skills-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20%;
+    border: none;
+    padding: 100px;
+  }
+  
+  .ability-list h3 {
+    font-size: 3rem;
     font-style: italic;
+    font-weight: 700;
+    padding-bottom: 88.88px;
   }
-
+  
+  .skills-wrapper li {
+    font-size: 3rem;
+  }
+  
+  .skills h2 {
+    color: #191919;
+  }
+  
+  
   /* ABOUT SECTION */
-  .about-img {
-    width: 10%;
-    height: 5%;
+  .about {
+    display: flex;
+    gap: 0;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin-top: 222px;
+    margin-bottom: 222px;
   }
-
+  
+  .about img {
+    width: 100%;
+  }
+  
+  .bio {
+    width: 25rem;
+    padding: .625rem;
+    border-radius: 6px;
+  }
+  
+  .bio h1 {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .bio p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+  }
+  
+  .bio-text1 {
+    font-size: 1.75rem;
+    text-align: right;
+  }
+  
+  .bio-text2 {
+    font-size: 1.25rem;
+    text-align: left;
+  }
+  
   /* FOOTER */
-
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 16px;
+    justify-content: center;
+    align-items: flex-end;
+    border: none;
+  }
+  
+  .social {
+    width: 8%;
+    text-align: justify;
+  }
+  
+  .social-icons {
+    font-size: 5rem;
+  }
+  
+  .marginLeft { 
+    margin-left: auto;
+    text-align: justify;
+    width: 8%;
+  }
+  
+  .footer-1 {
+    color: orangered;
+    font-size: 4rem;
+    line-height: normal;
+    width: 50%;
+    text-align: left;
+  }
+  
+  .copyright h2 {
+    color: #191919;
+  }
+  
+  .copyright-header {
+    margin-bottom: 13px;
+  }
+  
   .scroll-up {
     position: fixed;
     right: 1%;
@@ -259,9 +421,6 @@
     width: 3rem;
     height: 3rem;
   }
-  
-
-  
   
   
   
@@ -354,221 +513,25 @@
      ========================================================================== */
   
      /*Mobile Query*/
-     @media only screen and (max-width: 600px) {
-      .header,
-      .projects,
-      .about,
-      .footer {
-        max-width: 100%;
-        margin: 100px 0;
-      }
-
-      body {
-        background-color: skyblue;
-      }
-
-      /* NAV + HEADER SECTIONS */
-      .header {
-        margin: 22px;
-      }
-      
-      .intro-section h1 {
-        font-size: 4.75rem;
-        line-height: 55px;
-        margin-bottom: 80px;
-      }
-
-      .intro-section p {
-        font-size: 1.5rem;
-        text-align: center;
-        margin-bottom: 100px;
-      }
-
-      /* PROJECTS SECTION */
-      .projects {
-        margin: 15px;
-      }
-
-      .introduction {
-        font-size: 1.5rem;
-        line-height: 20px;
-        text-align: justify;
-      }
-
-      .project-pic {
-        margin: 10px;
-      }
-
-      .projects-container {
-        margin-left: 15px;
-        text-align: center;
-      }
-
-      .project-container {
-        margin: 0 15px;
-      }
-
-      .project-button {
-        margin-bottom: 35px;
-      }
-
-      /* SKILLS SECTION */
-
-      /* ABOUT SECTION */
-
-      /* FOOTER */
-     }
-
-
-     @media only screen and (min-width:768px) {
-      /*Tablet styles here*/
-    
-      /* GENERAL STYLES */
-      .header,
-      .projects,
-      .about,
-      .footer {
-        max-width: 100%;
-        margin: 100px 0;
-      }
-
+    @media only screen and (max-width: 480px) {
       body {
         background-color: tomato;
       }
-
-      /* NAV + HEADER SECTIONS */
-      .header {
-        margin: 22px;
-      }
-      
-      .intro-section h1 {
-        font-size: 6rem;
-        line-height: 60px;
-      }
-
-      .intro-section p {
-        font-size: 2.5rem;
-        text-align: center;
-      }
-
-      /* PROJECTS SECTION */
-      .projects {
-        margin: 15px;
-      }
-
-      .introduction {
-        font-size: 1.5rem;
-        line-height: 20px;
-        text-align: justify;
-        margin-bottom: 40px;
-      }
-
-      .project-pic {
-        margin: 10px;
-      }
-
-      .projects-container {
-        text-align: center;
-        margin-left: 65px;
-      }
-
-      .project-container {
-        margin: 0 15px;
-      }
-
-      .project-button {
-        margin-bottom: 35px;
-      }
-
-      .project-details {
-      }
-
-      /* SKILLS SECTION */
-
-      /* ABOUT SECTION */
-
-      /* FOOTER */
-
     }
   
-    @media only screen and (min-width: 1200px) {  
-      /*Desktop styles here */  
-       
-      /* General styles */
-      .header,
-      .projects,
-      .about,
-      .footer {
-        max-width: 100%;
-        margin: 100px 0;
+     /*Desktop Query*/
+    @media only screen and (min-width: 768px) {
+      body {
+        background: black;
+      }
     }
-
-    body {
-      background-color: pink;
+  
+    /*Tablet Query*/
+    @media only screen and (min-width: 481px) and (max-width:768px) {
+      body {
+        background: pink;
+      }
     }
-
-    /* GENERAL STYLES */
-    .header,
-    .projects,
-    .about,
-    .footer {
-      max-width: 100%;
-      margin: 100px 0;
-    }
-
-    body {
-      background-color: pink;
-    }
-
-    /* NAV + HEADER SECTIONS */
-    .header {
-      margin: 22px;
-    }
-    
-    .intro-section h1 {
-      font-size: 19.9rem;
-      line-height: 208px;
-    }
-
-    .intro-section p {
-      margin: -50px 0 0 250px;
-      font-size: 3.5rem;
-    }
-
-    /* PROJECTS SECTION */
-    .projects {
-      margin: 15px;
-    }
-
-    .introduction {
-      font-size: 1.5rem;
-      line-height: 20px;
-      text-align: justify;
-      margin-bottom: 40px;
-    }
-
-    .projects-info {
-      display: flex;
-      align-items: center;
-      justify-content:center;
-      flex-wrap: nowrap;
-      width: 100%;
-    }
-    
-    .projects-info p {
-      font-size: 3.33rem;
-      line-height: 50px;
-      font-style: italic;
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-    
-    /* SKILLS SECTION */
-
-    /* ABOUT SECTION */
-
-    /* FOOTER */
-  }
   
   @media print,
     (-webkit-min-device-pixel-ratio: 1.25),
