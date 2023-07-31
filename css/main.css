@@ -27,11 +27,9 @@
     --bolder-font: 900;
     --bg-color: #EEEDE9;
     --primary-color: #191919;
-    --secondary-color: #ff7235;
+    --secondary-color: orangered;
     --primary-shadow: #8b8eaf;
     --secondary-shadow: #a17a69;
-    --bottom-margin: 0.5rem;
-    --bottom-margin-2: 1rem;
     --line-height: 1.7rem;
     --transition: 0.3s;
    }
@@ -259,7 +257,7 @@
   }
   
   .scroll-up:hover {
-    color:#ff7235;
+    color: orangered;
   }
   
   .up-arrow {
@@ -429,7 +427,7 @@
       }
 
       .ability-list h3 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-style: italic;
         font-weight: 700;
         margin-top: 60px;
@@ -437,8 +435,8 @@
       }
 
       .skills-wrapper li {
-        font-size: 3rem;
-        line-height: 44.44px;
+        font-size: 2.5rem;
+        line-height: 40px;
       }
 
       /* ABOUT SECTION */
@@ -591,7 +589,7 @@
       }
 
       .ability-list h3 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-style: italic;
         font-weight: 700;
         margin-top: 60px;
@@ -599,7 +597,7 @@
       }
 
       .skills-wrapper li {
-        font-size: 3rem;
+        font-size: 2.5rem;
         line-height: 44.44px;
       }
 
@@ -697,142 +695,147 @@
         margin: 100px 0;
     }
 
+     /* GENERAL STYLES */
+      .header,
+      .projects,
+      .about,
+      .footer {
+        max-width: 100%;
+        margin-top: 300px;
+        margin-bottom: 100px;
+      }
 
-    /* GENERAL STYLES */
-    .header,
-    .projects,
-    .about,
-    .footer {
-      max-width: 100%;
-      margin: 100px 0;
-    }
-
-    /* NAV + HEADER SECTIONS */
-    .header {
-      margin: 22px;
-    }
+      /* NAV + HEADER SECTIONS */
+     .header {
+        margin: 22px;
+      }
     
-    .intro-section h1 {
-      font-size: 19.9rem;
-      line-height: 208px;
-    }
+      .intro-section h1 {
+        font-size: 19.9rem;
+        line-height: 208px;
+      }
 
-    .intro-section p {
-      margin-bottom: 333px;
-      font-size: 3.5rem;
-    }
+      .intro-section p {
+        margin-bottom: 111px;
+        font-size: 3.5rem;
+      }
 
-    /* PROJECTS SECTION */
-    .projects-title {
-      text-align: center;
-      padding: 5%;
-      font-size: 60px;
-      font-style: italic;
-    }
+      /* PROJECTS SECTION */
+      
+      .projects-title {
+        text-align: center;
+        padding: 5%;
+        font-size: 60px;
+        font-style: italic;
+      }
     
-    .introduction {
-      font-size: 3rem;
-      font-style: italic;
-      line-height: 35px;
-      margin: 20px;
-      margin-bottom: 80px;
-    }
+      .introduction {
+        font-size: 3rem;
+        font-style: italic;
+        line-height: 35px;
+        margin: 20px;
+        margin-bottom: 80px;
+      }
     
-    .projects-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      flex-direction: row;
-      gap: 20%;
-      margin: 15%;
-    }
+      .projects-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 20%;
+        margin: 15%;
+      }
 
-    .project-title {
-      text-align: center;
-      margin: 1rem;
-      font-style: italic;
-      font-weight: 600;
-    }
+      .project-title {
+        text-align: center;
+        margin: 1rem;
+        font-style: italic;
+        font-weight: 600;
+     }
     
-    .project-container {
-      text-align: center;
-      width: 22rem;
-      padding: 2rem;
-    }
+      .project-container {
+        text-align: center;
+        width: 22rem;
+        padding: 2rem;
+     }
 
-    .project-container p {
-      padding: 0.4rem;
-      font-size: 1.2rem;
-    }
+      .project-container p {
+        padding: 0.4rem;
+        font-size: 1.2rem;
+      }
         
-    /* SKILLS SECTION */
-    .skills-wrapper {
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      flex-direction: row;
-      gap: 5%;
-      border: none;
-      padding: 100px;
-      text-align: center;
-    }
+      /* SKILLS SECTION */
+      .skills-wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: row;
+        gap: 5%;
+        border: none;
+        padding: 100px;
+        text-align: center;
+        margin-bottom: 200px;
+      }
     
-    .ability-list h3 {
-      font-size: 3rem;
-      font-style: italic;
-      font-weight: 700;
-      padding-bottom: 88.88px;
-    }
+      .ability-list h3 {
+        font-size: 3rem;
+        font-style: italic;
+        font-weight: 700;
+        padding-bottom: 88.88px;
+      }
     
-    .skills-wrapper li {
-      font-size: 3rem;
-    }
+      .skills-wrapper li {
+        font-size: 3rem;
+      }
 
-    /* ABOUT SECTION */
+      /* ABOUT SECTION */
+      .about {
+        margin-bottom: 0;
+      }
 
-    /* FOOTER */
-    .footer {
-      display: flex;
-      flex-direction: row-reverse;
-      gap: 16px;
-      justify-content: center;
-      align-items: flex-end;
-      border: none;
-    }
+      /* FOOTER */
+      .footer {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 16px;
+        justify-content: center;
+        align-items: flex-end;
+        border: none;
+      }
     
-    .social {
-      width: 8%;
-      text-align: justify;
-    }
+      .social {
+        width: 8%;
+        text-align: justify;
+      }
     
-    .social-icons {
-      font-size: 5rem;
-    }
+      .social-icons {
+       font-size: 5rem;
+      }
     
-    .marginLeft { 
-      margin-left: auto;
-      text-align: justify;
-      width: 8%;
-    }
+      .marginLeft { 
+        margin-left: auto;
+        text-align: justify;
+        width: 8%;
+      }
     
-    .footer-1 {
-      color: orangered;
-      font-size: 4rem;
-      line-height: normal;
-      width: 50%;
-      text-align: left;
-      margin-left: 10px;
-    }
+      .footer-1 {
+        color: orangered;
+        font-size: 4rem;
+        line-height: normal;
+        width: 50%;
+        text-align: left;
+        margin-left: 10px;
+      }
     
-    .copyright h2 {
-      color: #191919;
-    }
+      .copyright h2 {
+        color: #191919;
+      }
     
-    .copyright-header {
-      margin-bottom: 13px;
+      .copyright-header {
+       margin-bottom: 13px;
+      }
     }
-  }
   
   @media print,
     (-webkit-min-device-pixel-ratio: 1.25),
