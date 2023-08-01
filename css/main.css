@@ -57,8 +57,9 @@
     body {
       font-family: var(--font-family);
     } 
-  
-  
+
+
+
   /*
    * Remove text-shadow in selection highlight:
    * https://twitter.com/miketaylr/status/12228805301
@@ -138,6 +139,36 @@
     margin: 100px 0;
   }
 
+  .accordion {
+    background-color: #191919;
+    color: #EEEDE9;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 8rem;
+    transition: 0.4s;
+    border-bottom: 2px solid #EEEDE9;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #cdcbc4; 
+    color: #191919;
+    border-bottom: none;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: #cdcbc4;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+
+  }
+
   /* NAV + HEADER SECTIONS */
   nav {
     position: relative;
@@ -195,7 +226,7 @@
 
   .projects-title {
     text-align: center;
-    padding: 20px;
+    padding: 40px;
   }
 
   .project-pic {
@@ -236,8 +267,9 @@
   }
 
   /* SKILLS SECTION */
-  .introduction {
-    font-style: italic;
+  .skills-title {
+    text-align: center;
+    padding: 40px;
   }
 
   /* ABOUT SECTION */
@@ -388,12 +420,36 @@
       }
 
       /* PROJECTS SECTION */
+      .accordion {
+        padding: 18px;
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 300;
+        font-style: italic;
+      }
+      
+      .active, .accordion:hover {
+        background-color: #cdcbc4; 
+        color: #191919;
+        border-bottom: none;
+      }
+      
+      .panel {
+        padding: 0 18px;
+        display: none;
+        background-color: #cdcbc4;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+    
+      }
+      
       .projects {
         margin: 15px;
       }
 
       .projects-title {
-        margin-top: 80px;
+        font-size: 2rem;
       }
 
       .introduction {
@@ -428,6 +484,13 @@
         justify-content: center;
         flex-direction: column;
         margin-left: 5px;
+      }
+
+      .skills-title {
+        font-size: 2rem;
+        margin-top: 10px;
+        margin-bottom: -80px;
+        text-align: center;
       }
 
       .ability-list h3 {
@@ -540,6 +603,7 @@
       }
 
       /* PROJECTS SECTION */
+      
       .projects {
         margin: 15px;
         margin-top: 100px;
@@ -572,9 +636,14 @@
         margin-top: 15px;
       }
 
+      .projects-title {
+        font-size: 3rem;
+        margin-top: 200px;
+      }
+
       .project-title {
         font-style: italic;
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin: 10px 10px;
       }
 
@@ -584,12 +653,18 @@
 
       /* SKILLS SECTION */
       .skills-wrapper {
-        margin-top: 50px;
         display: flex;
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
         margin-left: 5px;
+      }
+
+      .skills-title {
+        text-align: center;
+        padding: 40px;
+        font-size: 3rem;
+        margin-bottom: -40px;
       }
 
       .ability-list h3 {
@@ -755,9 +830,10 @@
 
       .project-title {
         text-align: center;
-        margin: 1rem;
+        margin: 0;
         font-style: italic;
-        font-weight: 600;
+        font-weight: 500;
+        font-size: 4rem;
      }
     
       .project-container {
@@ -774,6 +850,11 @@
       /* SKILLS SECTION */
       .skills {
         margin-top: -222px;
+      }
+
+      .skills-title {
+        text-align: center;
+        margin-bottom: 80px;
       }
       
       .skills-wrapper {

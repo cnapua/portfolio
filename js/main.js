@@ -10,24 +10,18 @@ scrollUp.addEventListener("click", () => {
 });
 
 
-// Nav hamburgerburger selections
-
-const burger = document.querySelector("#burger-menu");
-const ul = document.querySelector("nav ul");
-const nav = document.querySelector("nav");
-
-burger.addEventListener("click", () => {
-    ul.classList.toggle("show");
-  });
-
-
-// Close hamburger menu when a link is clicked
-
-// Select nav links
-const navLink = document.querySelectorAll(".nav-link");
-
-navLink.forEach((link) =>
-  link.addEventListener("click", () => {
-    ul.classList.remove("show");
-  })
-);
+// accordion
+var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
