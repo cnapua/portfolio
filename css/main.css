@@ -58,6 +58,10 @@
       font-family: var(--font-family);
     } 
 
+    img {
+      border-style: none;
+      width: 3%;
+    }
 
 
   /*
