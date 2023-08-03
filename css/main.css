@@ -402,6 +402,10 @@
       .header {
         margin: 22px;
       }
+
+      .nav-icon {
+        display: none;
+      }
       
       .intro-section h1 {
         font-size: 4.75rem;
@@ -588,6 +592,7 @@
         margin: 22px;
         margin-bottom: 222px;
       }
+
       
       .intro-section h1 {
         font-size: 8rem;
