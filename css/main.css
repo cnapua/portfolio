@@ -670,6 +670,7 @@
         padding: 40px;
         font-size: 3rem;
         margin-top: 400px;
+        font-style: italic;
       }
 
       .ability-list h3 {
@@ -796,13 +797,13 @@
       }
     
       .intro-section h1 {
-        font-size: 19.9rem;
-        line-height: 208px;
+        font-size: 13rem;
+        line-height: 140px;
       }
 
       .intro-section p {
         margin-bottom: 111px;
-        font-size: 3.5rem;
+        font-size: 4rem;
       }
 
       /* PROJECTS SECTION */
