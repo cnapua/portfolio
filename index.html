@@ -1,5 +1,6 @@
 <!doctype html>
 
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Portfolio | Caitlin Napua M. Duquette</title>
@@ -27,12 +28,12 @@
 
   <!-- NAV -->
     <nav>
-      <h1></h1>
+      <h1><!-- space for a future heading or icon --></h1>
       <ul class="navigation">
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#footer" class="nav-link">Contact</a></li>
+        <li><a href="#projects-area" class="nav-link">Projects</a></li>
+        <li><a href="#skills-area" class="nav-link">Skills</a></li>
+        <li><a href="#about-area" class="nav-link">About</a></li>
+        <li><a href="#footer-area" class="nav-link">Contact</a></li>
       </ul>
     </nav>
 
@@ -44,18 +45,61 @@
       </div>
     </section>
 
-</head>
-
-<body>
-
   <!-- PROJECTS -->
-    <section class="projects" id="projects">      
+    <section class="projects" id="projects-area">      
       <h2 class="projects-title">Recent Projects</h2>
 
         <!-- ACCORDION -->
-        <button class="accordion">
-          <h3 class="project-title">Unplugged Retreat | HTML/CSS, Media Queries, Responsinve Typography</h3></button>
+        <button class="accordion project-title">
+          Name Tag Generator | JSX, ES6
+        </button>
         <div class="panel">
+          <p class="project-pic">
+            <img src="./img/nametaggenerator.jpg" alt="project pic" class="project-pic">
+          </p>
+          <p class="project-details">
+            A name tag generator that creates bulk name tags. Utilizes ES6 modules and functional components.<br><br>
+          </p>
+          <p class="project-details">
+            <strong><em>Skills:</em></strong> JSX, ES6, Managing data flow<br>
+          </p>
+            <p class="project-details">
+              <strong><em>Tools:</em></strong> CodeSandbox<br><br>
+          </p>
+          <p>
+            <a href="https://nwlmn6.csb.app/" target="_blank" class="project-link">View Live</a><br><br>
+          </p>
+        </div>
+        
+        <button class="accordion project-title">
+          Super Sticky Note | ES6, JSE
+        </button>
+        <div class="panel">
+          <p class="project-pic">
+            <img src="./img/superstickynote.jpg" alt="project pic" class="project-pic">
+          </p>
+          <p class="project-details">
+            This greenfield project allows users to add, edit, search for and delete “sticky notes.” 
+            Multiple components were used in building this interactive UI.<br><br>
+          </p>
+          <p class="project-details">
+            <strong><em>Skills:</em></strong> ES6, JSX, Managing data flow, Manipulate the DOM<br>
+          </p>
+            <p class="project-details">
+              <strong><em>Tools:</em></strong> CodeSandbox<br><br>
+          </p>
+          <p>
+          <a href="https://zpg8jt.csb.app/" target="_blank" class="project-link">View Live</a><br><br>
+          </p>
+          </div>
+
+        <button class="accordion project-title">
+          Unplugged Retreat | HTML/CSS, <br>Media Queries, Responsive Typography
+        </button>
+        <div class="panel">
+          <p class="project-pic">
+            <img src="./img/unplugged.jpg" alt="project pic" class="project-pic">
+          </p>
           <p class="project-details">
             A clean and informative multipage website for a tech industry retreat 
             utilizing mobile responsive design. With several sections in this design,
@@ -67,52 +111,15 @@
             <p class="project-details">
               <strong><em>Tools:</em></strong> GitHub Pages, Chrome DevTools, VSCode<br><br>
           </p>
-          <button class="project-button">
-            <a href="https://cnapua.github.io/responsive-web-project/index.html" target="_blank">View Live</a>
-          </button>
-        </div>
-        
-        <button class="accordion">
-          <h3 class="project-title">Name Tag Generator | JSX, ES6</h3>
-        </button>
-        <div class="panel">
-          <p class="project-details">
-            A name tag generator that creates bulk name tags. Utilizes ES6 modules and functional components.<br><br>
-          </p>
-          <p class="project-details">
-            <strong><em>Skills:</em></strong> JSX, ES6, Managing data flow<br>
-          </p>
-            <p class="project-details">
-              <strong><em>Tools:</em></strong> CodeSandbox<br><br>
-          </p> 
-          <button class="project-button">
-            <a href="https://nwlmn6.csb.app/" target="_blank">View Live</a>
-          </button></div>
-        </div>
-        
-        <button class="accordion">
-          <h3 class="project-title">Super Sticky Note | ES6, JSE</h3>
-        </button>
-        <div class="panel">
-          <p class="project-details">
-            This greenfield project allows users to add, edit, search for and delete “sticky notes.” 
-            Multiple components were used in building this interactive UI.<br><br>
-          </p>
-          <p class="project-details">
-            <strong><em>Skills:</em></strong> ES6, JSX, Managing data flow, Manipulate the DOM<br>
-          </p>
-            <p class="project-details">
-              <strong><em>Tools:</em></strong> CodeSandbox<br><br>
-          </p>
-          <button class="project-button">
-          <a href="https://zpg8jt.csb.app/" target="_blank">View Live</a>
-        </button></div>
-        <br><br><br><br><br>
+            <p>
+              <a href="https://cnapua.github.io/responsive-web-project/index.html" target="_blank" class="project-link">View Live</a><br><br>
+              </p>
+              </div>
+      </section>
 
 
   <!-- SKILLS -->
-    <section class="skills" id="skills">
-      <section class="projects" id="projects">
+    <section class="skills" id="skills-area">
         <h2 class="skills-title">Relevant Skills</h2>
       <div class="skills-wrapper">
         <div class="ability-list">
@@ -126,17 +133,22 @@
         <div class="ability-list">
           <h3>Dev Skills</h3>
           <ul class="ability">
-            <li class="ability">HTML</li>
-            <li class="ability">CSS</li>
-            <li class="ability">JS</li>
-            <li class="ability">React</li>
-            <li class="ability">Git</li>
+            <li class="ability">HTML5</li>
+            <li class="ability">CSS3</li>
+            <li class="ability">JavaScript</li>
+            <li class="ability">ES6, JSX, React</li>
+            <li class="ability">Flexbox</li>
+            <li class="ability">Media Queries</li>
+            <li class="ability">APIs</li>
+            <li class="ability">Manipulate the DOM</li>
+            <li class="ability">Responsive Typography</li>
             <li class="ability">Responsive Web Development</li>
             </ul>
         </div>
         <div class="ability-list">
           <h3>Tools</h3>
           <ul class="tools">
+            <li class="tool">VSCode</li>
             <li class="tool">Adobe CC</li>
             <li class="tool">Squarespace, Wix</li>
             <li class="tool">Canva</li>
@@ -150,7 +162,7 @@
   <!-- ABOUT -->
   
   
-  <section class="about" id="about">
+  <section class="about" id="about-area">
 
     <div class="bio section">
       <p class="bio-text1">
@@ -161,20 +173,16 @@
       </p>
     </div>
     <div class="bio section">
-      <img 
-      src="./img/mscait.png" 
-      alt="cait"
-      loading="patience..."
-      class="about-img">
+      <img src="./img/mscait.png" alt="cait" class="about-img">
     </div>
     <div class="bio section">
       <p class="bio-text2">
-        <br><br><br><br><br>
         As a teenager I coded obsessively and returned to web design and development 
         only recently. Limited resources and exposure allowed me to take a break 
         from coding and gain other professional skills in communication, organization, 
         and detail orientation.
-        <br><br>
+    </p>
+      <p class="bio-text2">
         When I'm not juggling coding with a full-time customer service job, I can be 
         found in the backcountry with my family.
       </p>
@@ -183,7 +191,7 @@
 
 
   <!-- FOOTER -->
-  <section class="footer" id="footer">
+  <section class="footer" id="footer-area">
     <div class="social">
       <div class="social-icons">
         <p>
@@ -196,7 +204,6 @@
           <a href="https://github.com/cnapua/" target="_blank"><i class="fab fa-github"></i></a>
         </p>
       </div>
-    </div>
     </div>
     <div class="footer-1"><h1>I'd love to hear from you;<br>
       <a href="mailto:caitlin.duquette@gmail.com" target="_blank">

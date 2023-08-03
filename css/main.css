@@ -139,36 +139,6 @@
     margin: 100px 0;
   }
 
-  .accordion {
-    background-color: #191919;
-    color: #EEEDE9;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 8rem;
-    transition: 0.4s;
-    border-bottom: 2px solid #EEEDE9;
-  }
-  
-  .active, .accordion:hover {
-    background-color: #cdcbc4; 
-    color: #191919;
-    border-bottom: none;
-  }
-  
-  .panel {
-    padding: 0 18px;
-    display: none;
-    background-color: #cdcbc4;
-    overflow: hidden;
-    width: 100%;
-    text-align: center;
-
-  }
-
   /* NAV + HEADER SECTIONS */
   nav {
     position: relative;
@@ -219,24 +189,16 @@
     flex-direction: row;
     width: 100%;
   }
-  
-  .project-pic {
-    width: 80%;
-  }
 
   .projects-title {
     text-align: center;
     padding: 40px;
   }
-
-  .project-pic {
-    border-radius: 11px;
-  }
   
-  .project-button {
-    color: #EEEDE9;
-    background: #FFF;
-    font-style: bold;
+  .project-link {
+    color: #191919;
+    background: #EEEDE9;
+    font-weight: 700;
     text-transform: lowercase;
     letter-spacing: 5px;
     padding: 8px;
@@ -245,18 +207,48 @@
     border-right: 0;
     border-left: 0;
     font-style: italic;
+    margin-bottom: 10px;
+  }
+
+  .accordion {
+    background-color: #191919;
+    color: #EEEDE9;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 8rem;
+    transition: 0.4s;
+    border-bottom: 2px solid #EEEDE9;
+  }
+  
+  .active, 
+  .accordion:hover {
+    background-color: #cdcbc4; 
+    color: #191919;
+    border-bottom: none;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: #cdcbc4;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
   }
 
   .project-pic {
     border-radius: 33.33%;
-    width: 85%;
-    height: 80%;
     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */    
      -webkit-filter: grayscale(100%);
      -moz-filter: grayscale(100%);
      -ms-filter: grayscale(100%);
      filter: grayscale(100%);
      filter: gray; /* IE 6-9 */
+    align-items: center;
   }
   
   .project-pic:hover {
@@ -426,6 +418,7 @@
         font-size: 1rem;
         font-weight: 300;
         font-style: italic;
+        text-align: center;
       }
       
       .active, .accordion:hover {
@@ -459,7 +452,8 @@
       }
 
       .project-pic {
-        margin: 10px;
+        padding: 20px;
+        width: 100%;
       }
 
       .projects-container {
@@ -526,7 +520,6 @@
       .bio-text2 {
         font-size: 1.25rem;
         text-align: justify;
-        margin-top: -100px;
         margin-left: 20px;
         margin-right: 10px;
         line-height: 20px;
@@ -609,16 +602,16 @@
         margin-top: 100px;
       }
 
-      .introduction {
-        font-size: 1.5rem;
-        line-height: 20px;
-        text-align: justify;
-        margin-bottom: 80px;
+      .accordion {
+        text-align: center;
       }
 
       .project-pic {
-        margin: 10px;
-        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        width: 60%;
       }
 
       .projects-container {
@@ -644,7 +637,6 @@
       .project-title {
         font-style: italic;
         font-size: 2rem;
-        margin: 10px 10px;
       }
 
       .project-details {
@@ -664,7 +656,7 @@
         text-align: center;
         padding: 40px;
         font-size: 3rem;
-        margin-bottom: -40px;
+        margin-top: 400px;
       }
 
       .ability-list h3 {
@@ -677,13 +669,13 @@
 
       .skills-wrapper li {
         font-size: 2.5rem;
-        line-height: 44.44px;
+        line-height: 53px;
       }
 
       /* ABOUT SECTION */
       .about {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
         gap: 0rem;
         max-width: 68.75rem;
@@ -720,7 +712,6 @@
       .bio-text2 {
         font-size: 1.25rem;
         text-align: left;
-        margin-top: -120px;
       }
 
       /* FOOTER */
@@ -748,7 +739,7 @@
       .footer-1 {
         color: orangered;
         font-size: 3rem;
-        line-height: 66.66px;
+        line-height: 78px;
         width: 5%;
         text-align: left;
       }
@@ -810,14 +801,6 @@
         font-style: italic;
       }
     
-      .introduction {
-        font-size: 3rem;
-        font-style: italic;
-        line-height: 35px;
-        margin: 20px;
-        margin-bottom: 80px;
-      }
-    
       .projects-container {
         display: flex;
         align-items: center;
@@ -826,6 +809,15 @@
         flex-direction: row;
         gap: 20%;
         margin: 15%;
+      }
+
+      .project-pic {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        width: 50%;
       }
 
       .project-title {
