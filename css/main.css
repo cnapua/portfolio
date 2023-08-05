@@ -271,10 +271,16 @@
   }
 
   /* ABOUT SECTION */
+  .about-title {
+    text-align: center;
+    padding: 40px;
+  }
+
   .about-img {
     width: 10%;
     height: 5%;
   }
+
 
   /* FOOTER */
 
@@ -515,6 +521,13 @@
         margin-top: 222px;
       }
 
+      .about-title {
+        font-size: 2rem;
+        margin-top: 200px;
+        margin-bottom: -200px;
+        text-align: center;
+      }
+
       .about img {
         width: 66.66%;
         margin-left: 20%;
@@ -693,6 +706,14 @@
         max-width: 68.75rem;
         margin-top: 222px;
         margin-bottom: 222px;
+      }
+
+      .about-title {
+        font-size: 3rem;
+        margin-top: 200px;
+        margin-bottom: -250px;
+        text-align: center;
+        font-style: italic;
       }
       
       .about img {
