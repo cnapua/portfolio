@@ -730,21 +730,20 @@
         margin-bottom: var(--bottom-margin);
       }
       
-      .bio p {
-        line-height: var(--line-height);
-        padding: 0.3rem 0;
-      }
-      
       .bio-text1 {
         font-size: 1.75rem;
         text-align: right;
         margin-left: 40px;
         margin-top: 20px;
+        line-height: var(--line-height);
+        padding: 0.3rem 0;
       }
       
       .bio-text2 {
-        font-size: 1.25rem;
+        font-size: 1.05rem;
         text-align: left;
+        padding: 0.3rem 0;
+        line-height: 16px;
       }
 
       /* FOOTER */
